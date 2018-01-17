@@ -39,30 +39,108 @@
 
  设计的功能|承担该功能的组员|任务完成度
  --|--|--
-  事件记录|彭茂源|50%
-  事件统计|荆泽宇|40%
+  事件选择|彭茂源|100%
+  开始与结束|荆泽宇|100%
+  持续时间计算|荆泽宇|100%
+  事件统计|彭茂源|0%
 
 # 产品技术方案
 > 描述你们的产品创意的技术思路，服务器端如何，客户端如何。不少于500字,可以配图描述，不允许粘贴复制网络资源，需要自己描述。
 
-> **此部分每组同学之间不能相同**，你需要展现自己的理解。  
+>1.将事件进行分类，并通过HTML语言设置相应的选项按钮，通过dart编码实现每个按钮对应的选择功能。并设置开始和结束按钮，当点击相应的两个按钮，则开始计时或者结束计时，统计完成该事件的总体花费时间。
+>2.利用列表功能将每项已经完成的时间记录在案，并在主页上直接呈现出来，用户可以直观的查看自己已经完成的一些事情；如若想查看所有已完成事件，则可以通过点击“今日事件”按钮查看全部事件
+>3.通过计算和统计，得出用户当日完成的事件，并通过饼状图等统计图直观的体现出来；用户可以通过点击相应的事件分类板块，查看该类事件的详细内容，获取该类事件的进行的时间段。
 
 # 我在小组中的分工
 ### 负责实现事件记录功能，将用户每件事情的开始和结束按照时间顺序记录下来，并在页面上呈现。
   组员|分数
  --|--
-  荆泽宇|8
-  
+  荆泽宇|10
+  彭茂源|8
 
 # 我的编程实践活动
 ## 我的代码
   
-```mysql
-update project_2015_1.means set  means="自己的,特有的" where wordID=5 and posID=3;
-update project_2015_1.means set  Csent=" 我承认原先我对她的评价很苛刻。"  where wordID=5 and posID=5;
-update project_2015_1.means set  Esent="I own that I judged her harshly at first." where wordID=5 and posID=5;
+<!DOCTYPE html>
 
-```
+<!--
+  Copyright (c) 2017, meflyup. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
+    
+</head> 
+    <body >  
+      <h1 id="dmbiao" style="text-align:center" ><p>A better beginning</p></h1>
+      <center><button id="xx">学习</button>  
+      <button id="gz">工作</button>
+      <button id="yl">娱乐</button>
+      <button id="dl">锻炼</button>
+      <button id="sj">睡觉</button>
+      <button id="xqfz">兴趣发展</button></center> 
+      <br><br><center><button id="js"><p>结束</p></button></center><br><br>
+      <link rel="stylesheet" href="styles.css">
+    <script defer src="main.dart" type="application/dart"></script>
+    <script defer src="packages/browser/dart.js"></script>
+</body>
+</html>
+
+
+import 'dart:math' as math; 
+import 'dart:html';
+UListElement sjb;
+
+var xx,xxt,gz,yl,dl,sj,xqfz ;
+String XX,YY;
+void tjxx(Event e){
+ var addList = new LIElement();
+ XX=xxt.toString();
+ XX=XX.substring(0,7) ;
+ addList.text='学习：'+XX;
+ sjb.children.add(addList); 
+}
+void tjgz(Event e){
+ var addList = new LIElement();
+ XX=xxt.toString();
+ XX=XX.substring(0,7) ;
+ addList.text='工作：'+XX;
+ sjb.children.add(addList); 
+} 
+void tjyl(Event e){
+ var addList = new LIElement();
+ XX=xxt.toString();
+ XX=XX.substring(0,7) ;
+ addList.text='娱乐：'+XX;
+ sjb.children.add(addList); 
+} 
+void tjdl(Event e){
+ var addList = new LIElement();
+ XX=xxt.toString();
+ XX=XX.substring(0,7) ;
+ addList.text='锻炼：'+XX;
+ sjb.children.add(addList); 
+} 
+void tjsj(Event e){
+ var addList = new LIElement();
+ XX=xxt.toString();
+ XX=XX.substring(0,7) ;
+ addList.text='睡觉：'+XX;
+ sjb.children.add(addList); 
+} 
+void tjxqfz(Event e){
+ var addList = new LIElement();
+ XX=xxt.toString();
+ XX=XX.substring(0,7) ;
+ addList.text='兴趣发展：'+XX;
+ sjb.children.add(addList); 
+} 
+
   
 ## 我的活动量化
 
@@ -73,7 +151,7 @@ update project_2015_1.means set  Esent="I own that I judged her harshly at first
 
 
 # 我的自评
-> 在本次进行项目的过程中，我更擅长与应用创意的提出以及功能的完善，能够较好的捕捉用户的需求并能够
+> 在本次进行项目的过程中，我更擅长与应用创意的提出以及功能的完善，能够较好的捕捉用户的需求并能够进行相应的设计。在编程实现过程中表现了较弱的编程能力和学习能力，不能够很好的完成相应的编码工作，进而影响了项目的实现过程，这一点需要花费很大的精力和时间才能得以提高和改进。
 
 > 如果用**一整天8小时**时间计算，你有信心再用多少天完成你未目前完成的功能？
 >十五天
