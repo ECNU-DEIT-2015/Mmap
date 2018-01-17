@@ -8,10 +8,10 @@
 2. 事件的开始与结束，点击事件，计时开始，然后点击结束。
 3. 持续时间的计算，系统会通过两个按钮的点击时间自动计算出持续时间，并以时，分，秒的方式显示出来。
 ### 在未来的推进中，我们还可以从以下方面进行改进：
-1. 完善界面设计，目前该应用只做了主要功能，用户界面还没有设计。
-2. 增加用户注册、登录功能：输入用户名，密码，链接数据库，实现个性化。
-3. 增加数据统计，分析功能，用户可以查看自己事件及花费时间的直方图，饼状图。
-4. 用户行为特点分析功能，通过较长时间的数据统计，可以分析出该用户的行为特点，习惯等。
+1. 增加用户注册、登录功能：连接数据库，将用户账号、密码传入数据库中并保存，并增加数据的记录量，用户可以查看几天甚至更久的行为，实现用户的个性化使用。
+2. 插入事件功能：在开始事件之后，当正在进行某项事件的过程中，可能因为主观或者客观的因素，用户进行了其他的行为或者事件，新的功能支持用户对这类现象做记录。如此用户则可以发现自己进行一件事情的过程中精力的集中程度。
+3. 行为评价功能：在用户查看当日统计的过程中，系统通过计算评估用户行为，客观地评价其完成事件的效率、专心度等水平。
+>4.用户互动功能，增加用户好友、分享等功能：提高用户的体验，促进好友之间互相监督和分享，学习其他人好的时间使用技巧。
 
 ## 设计的功能列表以及其完成情况
 设计的功能|承担该功能的组员|任务完成度
@@ -28,90 +28,11 @@
 ### 负责所有代码。
   组员|分数
  --|--
-  彭茂源|98
-  荆泽宇|100
+  彭茂源|9
+  荆泽宇|10
   
 # 我的编程实践活动
 ## 我的代码
-<!DOCTYPE html>
-
-<!--
-  Copyright (c) 2017, meflyup. All rights reserved. Use of this source code
-  is governed by a BSD-style license that can be found in the LICENSE file.
--->
-
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="scaffolded-by" content="https://github.com/google/stagehand">
-    
-</head> 
-    <body >  
-      <h1 id="dmbiao" style="text-align:center" ><p>A better beginning</p></h1>
-      <center><button id="xx">学习</button>  
-      <button id="gz">工作</button>
-      <button id="yl">娱乐</button>
-      <button id="dl">锻炼</button>
-      <button id="sj">睡觉</button>
-      <button id="xqfz">兴趣发展</button></center> 
-      <br><br><center><button id="js"><p>结束</p></button></center><br><br>
-      <link rel="stylesheet" href="styles.css">
-    <script defer src="main.dart" type="application/dart"></script>
-    <script defer src="packages/browser/dart.js"></script>
-</body>
-</html>
-
-
-import 'dart:math' as math; 
-import 'dart:html';
-UListElement sjb;
-
-var xx,xxt,gz,yl,dl,sj,xqfz ;
-String XX,YY;
-void tjxx(Event e){
- var addList = new LIElement();
- XX=xxt.toString();
- XX=XX.substring(0,7) ;
- addList.text='学习：'+XX;
- sjb.children.add(addList); 
-}
-void tjgz(Event e){
- var addList = new LIElement();
- XX=xxt.toString();
- XX=XX.substring(0,7) ;
- addList.text='工作：'+XX;
- sjb.children.add(addList); 
-} 
-void tjyl(Event e){
- var addList = new LIElement();
- XX=xxt.toString();
- XX=XX.substring(0,7) ;
- addList.text='娱乐：'+XX;
- sjb.children.add(addList); 
-} 
-void tjdl(Event e){
- var addList = new LIElement();
- XX=xxt.toString();
- XX=XX.substring(0,7) ;
- addList.text='锻炼：'+XX;
- sjb.children.add(addList); 
-} 
-void tjsj(Event e){
- var addList = new LIElement();
- XX=xxt.toString();
- XX=XX.substring(0,7) ;
- addList.text='睡觉：'+XX;
- sjb.children.add(addList); 
-} 
-void tjxqfz(Event e){
- var addList = new LIElement();
- XX=xxt.toString();
- XX=XX.substring(0,7) ;
- addList.text='兴趣发展：'+XX;
- sjb.children.add(addList); 
-} 
 
 void txx(MouseEvent event)
 {xx=new DateTime.now();
