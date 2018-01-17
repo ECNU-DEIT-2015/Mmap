@@ -34,7 +34,7 @@
 1. 增加用户注册、登录功能：连接数据库，将用户账号、密码传入数据库中并保存，并增加数据的记录量，用户可以查看几天甚至更久的行为，实现用户的个性化使用。
 2. 插入事件功能：在开始事件之后，当正在进行某项事件的过程中，可能因为主观或者客观的因素，用户进行了其他的行为或者事件，新的功能支持用户对这类现象做记录。如此用户则可以发现自己进行一件事情的过程中精力的集中程度。
 3. 行为评价功能：在用户查看当日统计的过程中，系统通过计算评估用户行为，客观地评价其完成事件的效率、专心度等水平。
-4.用户互动功能，增加用户好友、分享等功能：提高用户的体验，促进好友之间互相监督和分享，学习其他人好的时间使用技巧。
+>4.用户互动功能，增加用户好友、分享等功能：提高用户的体验，促进好友之间互相监督和分享，学习其他人好的时间使用技巧。
 ## 设计的功能列表以及其完成情况
 
  设计的功能|承担该功能的组员|任务完成度
@@ -51,7 +51,7 @@
 ### 负责实现事件记录功能，将用户每件事情的开始和结束按照时间顺序记录下来，并在页面上呈现。
   组员|分数
  --|--
-  荆泽宇|89
+  荆泽宇|8
   
 
 # 我的编程实践活动
@@ -65,39 +65,15 @@ update project_2015_1.means set  Esent="I own that I judged her harshly at first
 ```
   
 ## 我的活动量化
-> 活动量化数据截止到2017-1-11,23:59.
->到诸如 https://github.com/DEIT2014/teamXexercise/graphs/contributors 这样的地址中（替换teamXexercise为你自己所在小组）查看你的活动状态,方法是：  
-![contributorpng](https://cloud.githubusercontent.com/assets/1710178/21607012/4f254246-d1ee-11e6-9eaf-4c9f21ccb572.png)
 
->到诸如https://github.com/DEIT2014/team2exercise/issues 中查询你的issure状态，方法是
-![yourissue](https://cloud.githubusercontent.com/assets/1710178/21606985/1d1b7e28-d1ee-11e6-9baa-a822675d66d5.png)
-
->查询后作类似如下描述，即你做了多少次commit，修改增加了多少，修改删除了多少，做了多少次issues    
-
->  **姓名/学号/29 commits / 1,954 ++ / 669 --/10 issues/**  
+>  **彭茂源/10154507121/12 commits  136 ++  32 -/2 issues/**  
 
 ## 我的issue活动
->在这里列出所有你参与的issue活动，包括你发起的问题，你回答的问题，你可以使用贴图展示，例子：
-![myissues](https://cloud.githubusercontent.com/assets/1710178/21607127/0b4ba550-d1ef-11e6-8e4c-9306ce07a7d4.png)
+>无
 
 
 # 我的自评
-> 请你对自己的工作进行自评。
+> 在本次进行项目的过程中，我更擅长与应用创意的提出以及功能的完善，能够较好的捕捉用户的需求并能够
+
 > 如果用**一整天8小时**时间计算，你有信心再用多少天完成你未目前完成的功能？
-
-# 关于打印md文档为pdf
->比部分是指导你如何打印你的这个文档为pdf文档的说明，不属于模板。
-- 下载按照有道云笔记，请自行搜索安装。
-- 打开软件后新建一个markdown文件，如图
-![newmdpng](https://cloud.githubusercontent.com/assets/1710178/21608376/192e708c-d1f7-11e6-870f-81c23f8e2bef.png)
-
-- 把你的markdown源文件放进去，并查看预览效果。如图
-![editmd](https://cloud.githubusercontent.com/assets/1710178/21608386/2898f0c4-d1f7-11e6-800b-5d73499dfd4c.png)
-
-- 在该文件列表上右键打印，如图。
-![printmd](https://cloud.githubusercontent.com/assets/1710178/21608392/2fc22be0-d1f7-11e6-88c8-5014ba28f24d.png)
-
-- 建议大家自行搜索按照foxit reader，它会带一个虚拟的pdf文件打印机，选择它就可以打印出pdf文档了，然后你就可以纸质版打印该pdf提交了。
-![print2pdf](https://cloud.githubusercontent.com/assets/1710178/21608409/39c50d4c-d1f7-11e6-8c2d-441e5f92a61f.png)
-
-- 各位自己设计打印一个封面。
+>十五天
